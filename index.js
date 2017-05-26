@@ -99,4 +99,4 @@ async function processImage (filename) {
   return features;
 }
 
-processImage("./img/test5.jpg").then((f) => console.log(f));
+processImage(process.argv[2]).then((f) => console.log(f));
